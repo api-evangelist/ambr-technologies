@@ -1,23 +1,78 @@
 aid: ambr-technologies
+
 name: Ambr Technologies
-description: 'Ambr Technologies is a company surfaced via the API Evangelist harvest backlog (source:
-  secondary-market) and added to the network as a stub for full-pipeline profiling.'
+
+image: https://ambr.ai/og
+
+description: 'Ambr Technologies provides AI-driven role‑play simulations for enterprise training, enabling teams to practice high‑stakes conversations such as sales negotiations, performance reviews, and customer service interactions. Their platform offers customizable scenarios, real‑time feedback, and analytics to improve communication skills across industries.'
+
 url: https://raw.githubusercontent.com/api-evangelist/ambr-technologies/refs/heads/main/apis.yml
+
 x-type: company
+
 x-source: harvest:secondary-market
-x-tier: stub
-x-tier-reason: harvest
+
+x-tier: profiled
+x-tier-reason: enrichment pass 2026-09-24 (modular-v1; was harvest)
+
 specificationVersion: '0.20'
+
 created: '2026-09-24'
+
 modified: '2026-09-24'
+
 tags:
-- Company
-apis: []
+- AI
+- Enterprise
+- Training
+- Roleplay
+- Communication
+
 maintainers:
 - FN: Kin Lane
   email: kin@apievangelist.com
 - FN: APIs.json
   email: info@apis.io
+
 common:
+- type: Conformance
+  url: conformance/ambr-technologies-conformance.yml
+- type: WellKnown
+  url: well-known/ambr-technologies-well-known.yml
+- type: Hosts
+  url: hosts/ambr-technologies-hosts.yml
+- type: Vendors
+  url: vendors/ambr-technologies-vendors.yml
+- type: TermsOfService
+  url: https://www.ambr.ai/terms
+- type: Security
+  url: https://www.ambr.ai/security/responsible-ai
+- type: Pricing
+  url: https://ambr.ai/blog/price-increase-conversations-training-account-teams
+- type: Documentation
+  url: https://www.ambr.ai/resources/guides
+- type: Blog
+  url: https://www.ambr.ai/blog
+- type: GettingStarted
+  url: https://ambr.ai/resources/frameworks/90-day-manager-onboarding-blueprint
+- type: DomainSecurity
+  url: security/ambr-technologies-domain-security.yml
 - type: Website
-  url: https://www.nasdaqprivatemarket.com/
+  url: https://www.ambr.ai
+
+apis: []
+
+x-coverage:
+  state: unreadable
+  reason: js-rendered-docs
+  detail: "Documentation pages are rendered via JavaScript and no machine‑readable OpenAPI, AsyncAPI, GraphQL or other contract was found."
+  evidence:
+    - url: https://www.ambr.ai/resources/guides
+      status: 200
+  checked: 2026-09-24
+x-enrichment:
+  date: '2026-09-24'
+  status: enriched
+  artifacts_added: 9
+  pass: modular-v1
+  engine: identity=local,contract=local,surfaces=local,docs=local
